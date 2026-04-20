@@ -1,6 +1,7 @@
 package thigk2.VuongHuyHoang.BaiThiGiuaKi;
 
 import android.os.Bundle;
+import android.widget.ListView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,8 +9,13 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.util.ArrayList;
+
 public class ChucNang3Activity extends AppCompatActivity {
 
+    ListView listView;
+    ArrayList<DiaDiem> list;
+    DiaDiemAdapter adapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,5 +26,35 @@ public class ChucNang3Activity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        listView = findViewById(R.id.listView);
+
+        list = new ArrayList<>();
+
+        // Hard-code 5 địa điểm
+        list.add(new DiaDiem("VinWonders Nha Trang",
+                "Đảo Hòn Tre, Nha Trang",
+                R.drawable.vinwonders));
+
+        list.add(new DiaDiem("Tháp Bà Ponagar",
+                "2 Tháng 4, Vĩnh Phước",
+                R.drawable.thapba));
+
+        list.add(new DiaDiem("Hòn Mun",
+                "Vịnh Nha Trang",
+                R.drawable.honmun));
+
+        list.add(new DiaDiem("Chùa Long Sơn",
+                "22 Đường 23/10",
+                R.drawable.chualongson));
+
+        list.add(new DiaDiem("Nhà thờ Núi",
+                "01 Thái Nguyên",
+                R.drawable.nhatho));
+
+        adapter = new DiaDiemAdapter(this, list);
+        listView.setAdapter(adapter);
     }
+
+
 }
