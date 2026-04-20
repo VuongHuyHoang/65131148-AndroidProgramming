@@ -27,6 +27,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="ChuyenManHinhChucNang1"
             android:text="Chức Năng 1" />
 
         <Button
@@ -34,15 +35,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Chức Năng 2" />
+            android:onClick="ChuyenManHinhChucNang3"
+            android:text="Chức Năng 3" />
 
         <Button
-            android:id="@+id/btnChucNang3"
+            android:id="@+id/btnChucNang4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:onClick="ChuyenManHinhChucNang3"
-            android:text="Chức Năng 3" />
+            android:onClick="ChuyenManHinhChucNang4"
+            android:text="Chức Năng 4" />
     </LinearLayout>
 
     <ListView

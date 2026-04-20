@@ -1,6 +1,8 @@
 package thigk2.VuongHuyHoang.BaiThiGiuaKi;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ListView;
 
 import androidx.activity.EdgeToEdge;
@@ -55,6 +57,26 @@ public class ChucNang3Activity extends AppCompatActivity {
         adapter = new DiaDiemAdapter(this, list);
         listView.setAdapter(adapter);
     }
-
+    public void ChuyenManHinhChucNang1(View v){
+        //Tạo một đối tượng Intent
+        //Tham số thứ 2 của hàm tạo này, là tên Activity (màn hình) ta muốn chuyển sang
+        Intent iManHinhKhac = new Intent(this,MainActivity.class);
+        //Thực hiện chuyển
+        startActivity(iManHinhKhac);
+    }
+    public void ChuyenManHinhChucNang2(View v){
+        //Tạo một đối tượng Intent
+        //Tham số thứ 2 của hàm tạo này, là tên Activity (màn hình) ta muốn chuyển sang
+        Intent iManHinhKhac = new Intent(this,ChucNang2Activity.class);
+        //Thực hiện chuyển
+        startActivity(iManHinhKhac);
+    }
+    public void ChuyenManHinhChucNang4(View v){
+        //Tạo một đối tượng Intent
+        //Tham số thứ 2 của hàm tạo này, là tên Activity (màn hình) ta muốn chuyển sang
+        Intent iManHinhKhac = new Intent(this,ChucNang4Activity.class);
+        //Thực hiện chuyển
+        startActivity(iManHinhKhac);
+    }
 
 }

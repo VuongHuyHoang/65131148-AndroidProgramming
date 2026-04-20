@@ -42,4 +42,19 @@ public class ChucNang2Activity extends AppCompatActivity {
         //Thực hiện chuyển
         startActivity(iManHinhKhac);
     }
+    public void ChuyenManHinhChucNang1(View v){
+        //Tạo một đối tượng Intent
+        //Tham số thứ 2 của hàm tạo này, là tên Activity (màn hình) ta muốn chuyển sang
+        Intent iManHinhKhac = new Intent(this, MainActivity.class);
+        //Thực hiện chuyển
+        startActivity(iManHinhKhac);
+    }
+    public void ChuyenManHinhChucNang4(View v){
+        //Tạo một đối tượng Intent
+        //Tham số thứ 2 của hàm tạo này, là tên Activity (màn hình) ta muốn chuyển sang
+        Intent iManHinhKhac = new Intent(this, ChucNang4Activity.class);
+        //Thực hiện chuyển
+        startActivity(iManHinhKhac);
+    }
+
 }

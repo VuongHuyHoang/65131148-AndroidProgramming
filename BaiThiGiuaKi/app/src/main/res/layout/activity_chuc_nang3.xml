@@ -8,6 +8,36 @@
     android:orientation="vertical"
     tools:context=".ChucNang3Activity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnchucnang1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="ChuyenManHinhChucNang1"
+            android:text="Chức Năng 1" />
+
+        <Button
+            android:id="@+id/btnchucnang2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="ChuyenManHinhChucNang2"
+            android:text="Chức Năng 2" />
+
+        <Button
+            android:id="@+id/btnChucNang4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="ChuyenManHinhChucNang4"
+            android:text="Chức Năng 4" />
+    </LinearLayout>
+
     <ListView
         android:id="@+id/listView"
         android:layout_width="match_parent"
