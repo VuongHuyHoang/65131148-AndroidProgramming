@@ -1,5 +1,6 @@
 package thigk2.VuongHuyHoang.BaiThiGiuaKi;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -42,5 +43,12 @@ public class MainActivity extends AppCompatActivity {
                 edtKetQua.setText(ketQua+"");
             }
         });
+    }
+    public void ChuyenManHinhChucNang2(View v){
+        //Tạo một đối tượng Intent
+        //Tham số thứ 2 của hàm tạo này, là tên Activity (màn hình) ta muốn chuyển sang
+        Intent iManHinhKhac = new Intent(this,ChucNang2Activity.class);
+        //Thực hiện chuyển
+        startActivity(iManHinhKhac);
     }
 }
