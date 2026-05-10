@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "438217965631",
+    "firebase_url": "https://vieccanlam-62189-default-rtdb.firebaseio.com",
+    "project_id": "vieccanlam-62189",
+    "storage_bucket": "vieccanlam-62189.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:438217965631:android:2ee0d48124c9e322bef88a",
+        "android_client_info": {
+          "package_name": "bonnus.vuonghuyhoang.androidapp.vieccanlam"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiJ4sA3s1ravNpuebza6PvTYP-XoX2ZBs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:438217965631:android:f5050403c930bdc9bef88a",
+        "android_client_info": {
+          "package_name": "vn.edu.tinhoc123.vieccanlam"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiJ4sA3s1ravNpuebza6PvTYP-XoX2ZBs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
